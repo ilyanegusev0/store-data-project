@@ -1,0 +1,59 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>400</x><y>264</y><w>100</w><h>80</h></coordinates><panel_attributes>Product
+--
+ID
+Name
+Price
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>474</y><w>100</w><h>80</h></coordinates><panel_attributes>Description
+--
+ID
+ProductID
+Description</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>274</y><w>100</w><h>60</h></coordinates><panel_attributes>Category
+--
+ID
+Name</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>354</y><w>100</w><h>80</h></coordinates><panel_attributes>ProductCategory
+--
+ID
+ProductID
+CategoryID</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>264</y><w>100</w><h>90</h></coordinates><panel_attributes>Order
+--
+ID
+OrderName
+CustomerID
+EmployeeID</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>354</y><w>100</w><h>80</h></coordinates><panel_attributes>OrderProduct
+--
+ID
+OrderID
+ProductID</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>124</y><w>100</w><h>60</h></coordinates><panel_attributes>Customer
+--
+ID
+Name</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>464</y><w>100</w><h>90</h></coordinates><panel_attributes>Employee
+--
+ID
+Name
+Position
+ChiefID</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>514</y><w>100</w><h>80</h></coordinates><panel_attributes>Friend
+--
+ID
+Employee1
+Employee2</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>334</y><w>80</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+&lt; описує</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>284</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=*
+&lt; належить</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>294</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>284</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=*
+&lt; містить</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>294</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>174</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+замовляє &gt;</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>344</y><w>110</w><h>140</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+&lt; опрацьовує</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>504</y><w>140</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=*
+&lt; товарищує</panel_attributes><additional_attributes>60;10;90;10;90;90;10;90;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>544</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>504</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+&lt; керує</panel_attributes><additional_attributes>50;10;10;10;10;90;70;90;70;50</additional_attributes></element></diagram>
