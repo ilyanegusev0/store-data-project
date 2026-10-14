@@ -1,7 +1,6 @@
-﻿using StoreDataProject.Data;
-using StoreDataProject.Models;
+﻿using StoreDataProject.Models;
 
-namespace StoreDataProject.Repositories
+namespace StoreDataProject.Data
 {
     public class DB
     {

@@ -1,5 +1,5 @@
-﻿using StoreDataProject.Models;
-using StoreDataProject.Repositories;
+﻿using StoreDataProject.Data;
+using StoreDataProject.Models;
 using StoreDataProject.Services;
 
 namespace StoreDataProject
