@@ -1,10 +1,11 @@
-﻿using System;
+﻿using StoreDataProject.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace StoreDataProject.Models
 {
-    public class Friend
+    public class Friend : IEntity
     {
         public int Id { get; set; }
         public int Employee1 { get; set; }

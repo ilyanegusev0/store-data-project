@@ -1,10 +1,11 @@
-﻿using System;
+﻿using StoreDataProject.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace StoreDataProject.Models
 {
-    public class Employee
+    public class Employee : IEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }

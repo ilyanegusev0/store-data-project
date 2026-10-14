@@ -1,11 +1,12 @@
-﻿using System;
+﻿using StoreDataProject.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Xml.Linq;
 
 namespace StoreDataProject.Models
 {
-    public class Order
+    public class Order : IEntity
     {
         public int Id { get; set; }
         public string OrderName { get; set; }

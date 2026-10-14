@@ -15,7 +15,7 @@ namespace StoreDataProject
 
             // Initialization
 
-            var repository = new DBRepository();
+            var db = new DB();
             var reportService = new ReportService();
 
             // Products
@@ -58,8 +58,8 @@ namespace StoreDataProject
             var friend4 = new Friend(1, 2);
 
             // Orders
-            var order1 = new Order("Order 1", 2, 4);
-            var order2 = new Order("Order 2", 3, 3);
+            var order1 = new Order("Order #1", 2, 4);
+            var order2 = new Order("Order #2", 3, 3);
 
             // OrderProducts
             var orderProduct1 = new OrderProduct(2, 1);
@@ -70,27 +70,50 @@ namespace StoreDataProject
 
             // Repository
 
-            repository.Products.AddItem(product1);
-            repository.Products.AddItem(product2);
-            repository.Products.AddItem(product3);
+            db.Products.AddItem(product1);
+            db.Products.AddItem(product2);
+            db.Products.AddItem(product3);
 
-            repository.Descriptions.AddItem(description1);
-            repository.Descriptions.AddItem(description2);
-            repository.Descriptions.AddItem(description3);
+            db.Descriptions.AddItem(description1);
+            db.Descriptions.AddItem(description2);
+            db.Descriptions.AddItem(description3);
 
-            repository.Categories.AddItem(category1);
-            repository.Categories.AddItem(category2);
-            repository.Categories.AddItem(category3);
+            db.Categories.AddItem(category1);
+            db.Categories.AddItem(category2);
+            db.Categories.AddItem(category3);
 
-            repository.ProductCategories.AddItem(productCategory1);
-            repository.ProductCategories.AddItem(productCategory2);
-            repository.ProductCategories.AddItem(productCategory3);
-            repository.ProductCategories.AddItem(productCategory4);
-            repository.ProductCategories.AddItem(productCategory5);
+            db.ProductCategories.AddItem(productCategory1);
+            db.ProductCategories.AddItem(productCategory2);
+            db.ProductCategories.AddItem(productCategory3);
+            db.ProductCategories.AddItem(productCategory4);
+            db.ProductCategories.AddItem(productCategory5);
+
+            db.Customers.AddItem(customer1);
+            db.Customers.AddItem(customer2);
+            db.Customers.AddItem(customer3);
+
+            db.Employees.AddItem(employee1);
+            db.Employees.AddItem(employee2);
+            db.Employees.AddItem(employee3);
+            db.Employees.AddItem(employee4);
+
+            db.Friends.AddItem(friend1);
+            db.Friends.AddItem(friend2);
+            db.Friends.AddItem(friend3);
+            db.Friends.AddItem(friend4);
+
+            db.Orders.AddItem(order1);
+            db.Orders.AddItem(order2);
+
+            db.OrderProducts.AddItem(orderProduct1);
+            db.OrderProducts.AddItem(orderProduct2);
+            db.OrderProducts.AddItem(orderProduct3);
+            db.OrderProducts.AddItem(orderProduct4);
+            db.OrderProducts.AddItem(orderProduct5);
 
             // Demonstration
 
-            reportService.DisplayReport(repository);
+            reportService.DisplayReport(db);
         }
     }
 }
